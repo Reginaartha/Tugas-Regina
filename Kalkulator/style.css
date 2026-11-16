@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #f8eee5,
+        #e8d0bd,
+        #c9a58c
+    );
+}
+
+/* Kotak Kalkulator */
+.kotak {
+    width: 350px;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    background: linear-gradient(
+        145deg,
+        #fffaf5,
+        #f3e2d4
+    );
+    box-shadow: 0 15px 35px rgba(91, 57, 38, 0.18);
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+/* Judul */
+.kotak h1 {
+    color: #80583f;
+    font-size: 29px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input dan Select */
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dfc5b2;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #fffdfb,
+        #f7e9de
+    );
+    color: #76513e;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #a8795b;
+    box-shadow: 0 0 8px rgba(168, 121, 91, 0.2);
+}
+
+/* Tombol */
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #c69b7b,
+        #8b5e46
+    );
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 12px rgba(139, 94, 70, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(
+        135deg,
+        #a8795b,
+        #68432f
+    );
+    transform: translateY(-3px);
+}
+
+/* Hasil */
+.hasil {
+    margin-top: 22px;
+    padding: 15px;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #f5e6d9,
+        #e5c9b3
+    );
+    color: #76513e;
+    font-size: 16px;
+}
+
+.hasil strong {
+    color: #805033;
+    font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .kotak {
+        width: 90%;
+        padding: 25px;
+    }
+}

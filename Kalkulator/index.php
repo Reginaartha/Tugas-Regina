@@ -42,7 +42,8 @@ if (isset ($_POST['hitung'])) {
 ?>
 
 <div class="kotak">
-<h1>Kalkulator</h1>
+<h1>calculator 𐔌՞. .՞𐦯</h1>
+<link rel="stylesheet" href="style.css">
     <form method="post">
      <input type="number" step="any" name="angka1" placeholder="Angka Pertama"
      value="<?php htmlspecialchars($angka1) ?>" required> 
